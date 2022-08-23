@@ -3,7 +3,7 @@ import re
 with open('files/regex_test.txt') as f:
     data = f.readlines()
 
-pattern = re.compile('[A-Z][a-z]+)\s([A-Z][a-z])*?\s?([A-Z][a-z]*)')
+pattern = re.compile('([A-Z][a-z]+)\s([A-Z][a-z])*?\s?([A-Z][a-z]*)')
 
 for person in data:
     match = pattern.search(person)
